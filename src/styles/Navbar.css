@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  background-color: #2df500;
+  color: #01000a;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+
+.nav-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 17px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+   opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1.8s ease-out forwards;
+}
