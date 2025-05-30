@@ -3,7 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 
 function Navbar() {
-  const name = "Colorful Court";
+  const name = "Colorful.Court";
 
   return (
     <nav className="navbar">

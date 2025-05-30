@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(7, 68, 12);
+  background-color: rgb(6, 95, 14);
   padding: 0.6rem;
   box-shadow: 0 10px 6px rgb(0, 0, 0);
   border-bottom: 4px solid #d400ff;
@@ -24,13 +24,13 @@
   font-weight: bold;
   font-family: "Ruslan Display", sans-serif;
   color: rgb(91, 21, 91);
-  letter-spacing: 15px;
+  letter-spacing: 18px;
   animation: ghostFloat 3s linear infinite;
 
  
   text-shadow:
-    1px 1px 0 #a117f1,   
-   -1px 1px 0 #d400ff,
+    1px 1px 0 #00ff11,   
+   -1px 1px 0 #0dff00,
     1px -1px 0 #bb6bfd,
    -1px -1px 0 #d400ff,
     0 0 10px rgb(134, 0, 157),
@@ -57,15 +57,16 @@
 .navbar-link,
 .navbar-button {
   text-decoration: none;
-  padding: 0.8rem;
+  padding: 0.6rem;
   border: 2px solid #d400ff;
   color: #d504ff;
-  font-family: "Ruslan Display", sans-serif;
-  font-size: 1.7rem;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.5rem;
   background: transparent;
   border-radius: 8px;
   transition: 0.3s ease;
   animation: flicker 1.6s infinite;
+  
 }
 
 .navbar-link:hover,
