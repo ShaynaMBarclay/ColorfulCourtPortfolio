@@ -4,7 +4,9 @@ import "./styles/Portfolio.css";
 
 
 const portfolioImages = [
-
+"https://res.cloudinary.com/dizfde4uy/image/upload/v1748630454/colorful.court_1_ijczjn.png",
+"https://res.cloudinary.com/dizfde4uy/image/upload/v1748630455/colorful.court_2_ggggbc.png",
+"https://res.cloudinary.com/dizfde4uy/image/upload/v1748630456/colorful.court_gvhity.png"
 ];
 
 
