@@ -1,0 +1,10 @@
+.portfolio {
+  background-image: url('/src/assets/court.jpg'); 
+  background-size: 17rem 17rem;
+  background-position: top left;
+  background-repeat: repeat;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white; 
+  
+}

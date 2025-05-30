@@ -1,27 +1,71 @@
 .navbar {
+  background-color: rgb(7, 68, 12);
+  padding: 1.5rem;
+  box-shadow: 0 10px 6px rgb(0, 0, 0);
+  border-bottom: 4px solid #9e02bd;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem;
-  background-color: #2df500;
-  color: #01000a;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
-
-
 }
 
+.navbar h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Ruslan Display", sans-serif;
+  color: rgb(113, 8, 113);
+  letter-spacing: 15px;
+ 
+  text-shadow:
+    1px 1px 0 #a117f1,   
+   -1px 1px 0 #d400ff,
+    1px -1px 0 #bb6bfd,
+   -1px -1px 0 #cd22f3,
+    0 0 10px rgb(134, 0, 157),
+    0 0 20px rgba(112, 3, 124, 0.823);
+}
 
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
 
-.nav-name {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 17px;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  font-family: "Playfair Display", serif;
-   opacity: 0;
-  transform: translateX(-50px);
-  animation: slideInLeft 1.8s ease-out forwards;
+.navbar-link,
+.navbar-button {
+  text-decoration: none;
+  padding: 0.8rem;
+  border: 2px solid #d400ff;
+  color: #d504ff;
+  font-family: "Ruslan Display", sans-serif;
+  font-size: 1.7rem;
+  background: transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-button:hover {
+  background: #d400ff;
+  color: white;
+  box-shadow: 0 0 10px #d400ff;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   font-family: "Ruslan Display", sans-serif;
+  padding: 0.6rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: #d400ff;
+  background: transparent;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-button:hover {
+  background-color: #d400ff;
+  color: white;
+  box-shadow: 0 0 10px #d400ff;
 }
