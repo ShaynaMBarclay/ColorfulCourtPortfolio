@@ -147,3 +147,85 @@
     padding: 0.5rem;
   }
 }
+
+/* --- Tablet Responsive Queries for Navbar --- */
+
+/* Small tablets (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between; 
+    overflow-x: visible;
+    
+  }
+
+  .navbar h1 {
+    font-size: 2.3rem !important;
+    letter-spacing: 12px;
+    margin-bottom: 0;
+  }
+
+  .navbar-buttons {
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+  }
+
+  .navbar-button,
+  .navbar-link,
+  .icon-button {
+    font-size: 2rem !important;
+    padding: 0.5rem 0.8rem !important;
+    width: auto !important;
+    max-width: none;
+    text-align: center;
+  }
+}
+
+/* Larger tablets (769px - 900px) */
+@media (min-width: 769px) and (max-width: 900px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+
+  .navbar h1 {
+    font-size: 2.4rem !important;
+    letter-spacing: 14px;
+  }
+
+  .navbar-button,
+  .navbar-link,
+  .icon-button {
+    font-size: 2.2rem !important;
+    padding: 0.55rem 1rem !important;
+    max-width: none;
+  }
+
+  .navbar-buttons {
+    gap: 1.2rem;
+  }
+}
+
+/* iPad Pro and larger tablets (901px - 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .navbar {
+    padding: 2rem;
+  }
+
+  .navbar h1 {
+    font-size: 2.8rem !important;    
+    letter-spacing: 12px;            
+  }
+
+  .navbar-buttons {
+    gap: 1rem;
+  }
+
+  .navbar-button,
+  .navbar-link,
+  .icon-button {
+    font-size: 2rem !important;      
+    padding: 0.5rem 1rem !important;
+    max-width: none;
+  }
+}
