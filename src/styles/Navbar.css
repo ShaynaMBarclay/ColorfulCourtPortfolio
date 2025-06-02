@@ -108,6 +108,13 @@
   .navbar h1 {
     font-size: 1.8rem !important;
     margin-bottom: 1rem;
+     text-shadow:
+      1px 1px 0 #00ff1180,
+     -1px 1px 0 #0dff0080,
+      1px -1px 0 #bb6bfd33,
+     -1px -1px 0 #d400ff33,
+      0 0 5px rgba(134, 0, 157, 0.1),
+      0 0 10px rgba(112, 3, 124, 0.1);
      
   }
 
