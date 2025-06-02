@@ -4,11 +4,26 @@
 @import './Navbar.css';
 @import './Portfolio.css';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body, 
@@ -26,3 +41,34 @@ html, body {
     margin: 0;
     padding: 0;
   }
+
+  /* --- Mobile Responsive Queries --- */
+@media (max-width: 600px) {
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+}
+
+@media (max-width: 480px) {
+  #root {
+     padding: 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Smaller ghost cursor for mobile */
+  body, 
+  a, 
+  button, 
+  input, 
+  select,
+  .portfolio-image {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='28' font-size='28'>👻</text></svg>") 0 0, auto !important;
+  }
+}

@@ -96,3 +96,54 @@
   color: rgb(91, 21, 91);
   
 }
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center !important;
+    padding: 2rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-button {
+    padding: 0.4rem 0.9rem !important;
+    font-size: 1.4rem !important;  
+    width: auto !important;  
+    max-width: 200px; 
+     margin: 0 auto;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .navbar-link,
+  .navbar-button,
+  .icon-button {
+    font-size: 2rem !important;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 2.4rem;
+    letter-spacing: 6px;
+  }
+
+  .navbar-link,
+  .navbar-button,
+  .icon-button {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+}
