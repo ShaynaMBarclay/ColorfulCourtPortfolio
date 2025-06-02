@@ -166,13 +166,13 @@
     font-size: 2.3rem !important;
     letter-spacing: 12px;
     margin-bottom: 0;
-    text-shadow:
-    1px 1px 0 #00ff11,   
-   -1px 1px 0 #0dff00,
-    1px -1px 0 #bb6bfd22,
-   -1px -1px 0 #d400ff38,
-    0 0 10px rgba(134, 0, 157, 0.163),
-    0 0 20px rgba(112, 3, 124, 0.189);
+     text-shadow:
+      1px 1px 0 #00ff1180,
+     -1px 1px 0 #0dff0080,
+      1px -1px 0 #bb6bfd33,
+     -1px -1px 0 #d400ff33,
+      0 0 5px rgba(134, 0, 157, 0.1),
+      0 0 10px rgba(112, 3, 124, 0.1);
   }
 
   .navbar-buttons {
@@ -201,6 +201,13 @@
   .navbar h1 {
     font-size: 2.4rem !important;
     letter-spacing: 14px;
+     text-shadow:
+      1px 1px 0 #00ff1180,
+     -1px 1px 0 #0dff0080,
+      1px -1px 0 #bb6bfd33,
+     -1px -1px 0 #d400ff33,
+      0 0 5px rgba(134, 0, 157, 0.1),
+      0 0 10px rgba(112, 3, 124, 0.1);
   }
 
   .navbar-button,
@@ -224,7 +231,14 @@
 
   .navbar h1 {
     font-size: 2.8rem !important;    
-    letter-spacing: 12px;            
+    letter-spacing: 12px;   
+     text-shadow:
+      1px 1px 0 #00ff1180,
+     -1px 1px 0 #0dff0080,
+      1px -1px 0 #bb6bfd33,
+     -1px -1px 0 #d400ff33,
+      0 0 5px rgba(134, 0, 157, 0.1),
+      0 0 10px rgba(112, 3, 124, 0.1);         
   }
 
   .navbar-buttons {
