@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import "./styles/Portfolio.css";
 import ghostImage from "./assets/ghost.png";
 
@@ -94,12 +94,14 @@ const shakeVariant = {
 const Portfolio = () => {
 
    const [shakingIndex, setShakingIndex] = useState(null);
+   const controls = useAnimation();
 
-  const handleImageClick = (index) => {
+  const handleImageClick = async (index) => {
+    if (shakingIndex !== null) return; 
     setShakingIndex(index);
-    setTimeout(() => {
-      setShakingIndex(null);
-    }, 500); // Match animation duration
+    await controls.start("shake");  
+    setShakingIndex(null);
+    controls.start("idle");          
   };
 
 
@@ -116,14 +118,14 @@ const Portfolio = () => {
       >
         {portfolioImages.map((src, i) => (
           <motion.div key={i} variants={imageVariants}>
-            <img
-              src={src}
-              alt={`Portfolio image ${i + 1}`}
-              className="portfolio-image"
-              onClick={() => handleImageClick(i)}
-              animate={shakingIndex === i ? "shake" : "idle"}
-              variants={shakeVariant}
-            />
+           <motion.img
+  src={src}
+  alt={`Portfolio image ${i + 1}`}
+  className="portfolio-image"
+  onClick={() => handleImageClick(i)}
+  animate={shakingIndex === i ? controls : "idle"}
+  variants={shakeVariant}
+/>
           </motion.div>
         ))}
       </motion.div>
