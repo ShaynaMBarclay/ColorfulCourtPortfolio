@@ -1,3 +1,4 @@
+
 .portfolio {
   background-image: url('/src/assets/court.jpg'); 
   background-size: 17rem 17rem;
@@ -53,4 +54,13 @@
 .portfolio-image:hover {
   box-shadow: 0 0 40px #d400ff;
   animation: cursedShake 0.3s infinite;
+}
+
+.floating-ghost {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  z-index: 1000;
+  pointer-events: none;
 }

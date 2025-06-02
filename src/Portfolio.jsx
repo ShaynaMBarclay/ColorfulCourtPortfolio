@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
+import ghostImage from "./assets/ghost.png";
 
 
 
@@ -69,15 +70,23 @@ const portfolioImages = [
 
 
 const imageVariants = {
-  hidden: { opacity: 0, x: 50 },
+  hidden: { opacity: 0, scale: 0.9, y: 30 },
   show: {
     opacity: 1,
-    x: 0,
+    scale: 1,
+    y: 0,
     transition: {
       duration: 0.6,
       ease: "easeOut",
     },
   },
+};
+
+const generateGhosts = (count) => {
+  return Array.from({ length: count }, () => ({
+    top: Math.random() * 100 + "vh",
+    left: Math.random() * 100 + "vw",
+  }));
 };
 
 
@@ -103,6 +112,20 @@ const Portfolio = () => {
           </motion.div>
         ))}
       </motion.div>
+      <motion.img
+  src={ghostImage}
+  alt="Ghost"
+  className="floating-ghost"
+  animate={{
+    y: [0, -10, 0],
+    rotate: [0, 5, -5, 0],
+  }}
+  transition={{
+    repeat: Infinity,
+    duration: 4,
+    ease: "easeInOut",
+  }}
+/>
     </div>
   );
 };
