@@ -67,6 +67,13 @@
   pointer-events: none;
 }
 
+@media (hover: hover) {
+  .portfolio-image:hover {
+    animation: cursedShake 0.3s infinite;
+    box-shadow: 0 0 40px #d400ff;
+  }
+}
+
 /* --- Responsive Styles --- */
 @media (max-width: 600px) {
    .portfolio {

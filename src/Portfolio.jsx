@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
 import ghostImage from "./assets/ghost.png";
@@ -82,15 +83,26 @@ const imageVariants = {
   },
 };
 
-const generateGhosts = (count) => {
-  return Array.from({ length: count }, () => ({
-    top: Math.random() * 100 + "vh",
-    left: Math.random() * 100 + "vw",
-  }));
+const shakeVariant = {
+  idle: { rotate: 0 },
+  shake: {
+    rotate: [0, 2, -2, 2, -2, 0],
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
 };
 
-
 const Portfolio = () => {
+
+   const [shakingIndex, setShakingIndex] = useState(null);
+
+  const handleImageClick = (index) => {
+    setShakingIndex(index);
+    setTimeout(() => {
+      setShakingIndex(null);
+    }, 500); // Match animation duration
+  };
+
+
   return (
     <div className="portfolio">
       <motion.div
@@ -108,6 +120,9 @@ const Portfolio = () => {
               src={src}
               alt={`Portfolio image ${i + 1}`}
               className="portfolio-image"
+              onClick={() => handleImageClick(i)}
+              animate={shakingIndex === i ? "shake" : "idle"}
+              variants={shakeVariant}
             />
           </motion.div>
         ))}
